@@ -22,3 +22,33 @@ for (var key in studente) {
 };
 
 $('#stud').append(datiStudente);
+
+// creo array di oggetti
+
+var elencoStudenti = [
+    {
+        nome : 'caio',
+        cognome : 'bianchi',
+        eta : '23'
+    },
+    {
+        nome : 'sempronio',
+        cognome : 'verdi',
+        eta : '25'
+    },
+    {
+        nome : 'marco',
+        cognome : 'giallini',
+        eta : '57'
+    }
+];
+// console.log(elencoStudenti);
+// stampo nome e cognome di tutti con ciclo
+
+
+for (var i = 0; i < elencoStudenti.length; i++) {
+    var nome = elencoStudenti[i].nome;
+    var cognome = elencoStudenti[i].cognome;
+    $('#studenti').append('nome: ' + nome + ', ' + 'cognome: ' + cognome + '<br>');
+
+};
